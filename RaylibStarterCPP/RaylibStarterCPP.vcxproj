@@ -119,6 +119,7 @@
       <ConformanceMode>true</ConformanceMode>
       <CompileAs>CompileAsCpp</CompileAs>
       <AdditionalIncludeDirectories>$(ProjectDir)dep\Raygui\src\;$(ProjectDir)dep\Raylib\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
