@@ -129,7 +129,7 @@ Vec3 GameObject::GetWorldPosition() const
 float GameObject::GetWorldRotation() const
 {
 	Vec3 fwd = GetForward();
-	return atan2(fwd.x, fwd.y);
+	return atan2(fwd.y, fwd.x);
 }
 
 Vec3 GameObject::GetWorldScale() const
@@ -162,11 +162,11 @@ void GameObject::Rotate(float rad)
 
 void GameObject::Scale(float x, float y)
 {
-	LocalScale = LocalScale + Vec3(x, y, 1);
+	LocalScale = LocalScale.Cross(Vec3{x, y, 1});
 }
 
 void GameObject::Scale(MathClasses::Vector3 scalar)
 {
-	LocalScale = LocalScale + scalar;
+	LocalScale = LocalScale.Cross(scalar);
 }
 
