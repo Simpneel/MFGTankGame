@@ -59,6 +59,10 @@ int main(int argc, char* argv[])
 
     Rectangle collisionCheckBox = { screenWidth / 7, screenHeight / 5, 50.0f, 50.0f };
 
+    Bullet bullet;
+    bullet.Sprite = &bulletTexture;
+    bullet.SetLocalPosition(turret.GetWorldPosition());
+    bullet.SetLocalRotation(turret.GetWorldRotation());
     //--------------------------------------------------------------------------------------
 
     // Main game loop
@@ -68,7 +72,21 @@ int main(int argc, char* argv[])
         player.Update(deltaTime); enemy.Update(deltaTime);
         turret.Update(deltaTime); turret2.Update(deltaTime);
 
-        
+        if (IsKeyDown(KEY_F)) {
+            screenWidth = 1366;
+            screenHeight = 768;
+            SetWindowSize(screenWidth, screenHeight);
+        }
+        if (IsKeyUp(KEY_F)) {
+            screenWidth = 800;
+            screenHeight = 450;
+            SetWindowSize(screenWidth, screenHeight);
+        }
+
+        if (bullet.CheckCollision(rightBorder)) {
+            bullet.SetLocalPosition(turret.GetWorldPosition());
+            bullet.SetLocalRotation(turret.GetWorldRotation());
+        }
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
@@ -80,6 +98,7 @@ int main(int argc, char* argv[])
         enemy.Draw();
         turret.Draw();
         turret2.Draw();
+        bullet.Update(deltaTime);
       
         EndDrawing();
         
