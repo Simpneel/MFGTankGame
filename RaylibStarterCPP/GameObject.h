@@ -3,11 +3,14 @@
 #include "Matrix3.h"
 #include "Vector3.h"
 
+using Vec3 = MathClasses::Vector3;
+using Mat3 = MathClasses::Matrix3;
+
 class GameObject {
 protected:
-	MathClasses::Vector3 LocalPosition;
+	Vec3 LocalPosition;
 	float LocalRotation;
-	MathClasses::Vector3 LocalScale;
+	Vec3 LocalScale;
 	virtual void OnUpdate(float deltaTime);
 	virtual void OnDraw();
 
@@ -26,7 +29,7 @@ public:
 	const GameObject* GetChild(size_t childIndex) const;
 
 	MathClasses::Vector3 GetLocalPosition() const;
-	void SetLocalPosition(MathClasses::Vector3 newPosition);
+	void SetLocalPosition(Vec3 newPosition);
 	void SetLocalPosition(float x, float y);
 
 	MathClasses::Vector3 GetWorldPosition() const;
@@ -37,7 +40,7 @@ public:
 	float GetWorldRotation() const;
 
 	MathClasses::Vector3 GetLocalScale() const;
-	void SetLocalScale(MathClasses::Vector3 newScale);
+	void SetLocalScale(Vec3 newScale);
 	void SetLocalScale(float x, float y);
 
 	MathClasses::Vector3 GetWorldScale() const;
@@ -48,10 +51,10 @@ public:
 	MathClasses::Matrix3 GetWorldMatrix() const;
 
 	void Translate(float x, float y);
-	void Translate(MathClasses::Vector3 translation);
+	void Translate(Vec3 translation);
 
 	void Rotate(float rad);
 
 	void Scale(float x, float y);
-	void Scale(MathClasses::Vector3 scalar);
+	void Scale(Vec3 scalar);
 };

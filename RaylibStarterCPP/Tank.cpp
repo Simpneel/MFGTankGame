@@ -13,16 +13,21 @@ void Tank::OnUpdate(float deltaTime)
 		yMove -= moveSpeed;
 	}
 	if (IsKeyDown(KEY_A)) {
-		rotation += rotateSpeed;
+		rotation -= rotateSpeed;
 	}
 	if (IsKeyDown(KEY_D)) {
-		rotation -= rotateSpeed;
+		rotation += rotateSpeed;
 	}
 
 	MathClasses::Vector3 finalMove = GetForward() * (yMove * deltaTime);
 	Translate(finalMove);
 	
 	Rotate(rotation * deltaTime);
+}
+
+Vec3 Tank::GetLocation()
+{
+	return this->GetWorldPosition();
 }
 
 void Tank2::OnUpdate(float deltaTime)
@@ -38,11 +43,12 @@ void Tank2::OnUpdate(float deltaTime)
 		yMove -= moveSpeed;
 	}
 	if (IsKeyDown(KEY_LEFT)) {
-		rotation += rotateSpeed;
-	}
-	if (IsKeyDown(KEY_RIGHT)) {
 		rotation -= rotateSpeed;
 	}
+	if (IsKeyDown(KEY_RIGHT)) {
+		rotation += rotateSpeed;
+	}
+	
 
 	MathClasses::Vector3 finalMove = GetForward() * (yMove * deltaTime);
 	Translate(finalMove);

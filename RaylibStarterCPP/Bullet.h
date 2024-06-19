@@ -4,4 +4,6 @@
 class Bullet : public SpriteObject {
 protected:
 	void OnUpdate(float deltaTime);
+public:
+	bool CheckCollision(Rectangle colRec);
 };

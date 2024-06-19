@@ -2,8 +2,15 @@
 
 void Bullet::OnUpdate(float deltaTime)
 {
-	float bulletSpeed = 1000.0f;
+	const float bulletSpeed = 750.0f;
+	float ySpeed = 0.0f;
+	ySpeed += bulletSpeed;
+	Translate(GetForward() * (ySpeed * deltaTime));
+}
 
-	MathClasses::Vector3 finalMove = GetForward() * (bulletSpeed * deltaTime);
-	Translate(finalMove);
+bool Bullet::CheckCollision(Rectangle colRec)
+{
+	if (CheckCollisionPointRec({ this->GetWorldPosition().x, this->GetWorldPosition().y }, colRec)) {
+		return true;
+	}
 }

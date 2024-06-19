@@ -1,9 +1,6 @@
 #include "GameObject.h"
 #include <algorithm>
 
-using Vec3 = MathClasses::Vector3;
-using Mat3 = MathClasses::Matrix3;
-
 GameObject::GameObject()
 {
 	Parent = nullptr;
@@ -143,6 +140,7 @@ Vec3 GameObject::GetForward() const
 {
 	auto mat = GetWorldMatrix();
 	return Vec3(mat.m1, mat.m2, mat.m3);
+	
 }
 
 void GameObject::Translate(float x, float y)
@@ -150,7 +148,7 @@ void GameObject::Translate(float x, float y)
 	LocalPosition = LocalPosition + Vec3(x, y, 0);
 }
 
-void GameObject::Translate(MathClasses::Vector3 translation)
+void GameObject::Translate(Vec3 translation)
 {
 	LocalPosition = LocalPosition + translation;
 }
@@ -165,7 +163,7 @@ void GameObject::Scale(float x, float y)
 	LocalScale = LocalScale.Cross(Vec3{x, y, 1});
 }
 
-void GameObject::Scale(MathClasses::Vector3 scalar)
+void GameObject::Scale(Vec3 scalar)
 {
 	LocalScale = LocalScale.Cross(scalar);
 }
