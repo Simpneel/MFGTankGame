@@ -44,7 +44,8 @@ int main(int argc, char* argv[])
     //SpriteObject Player;
     Tank player;
     Turret turret;
-    std::vector<Bullet> magazine;
+    std::vector<Bullet> playerMag;
+    std::vector<Bullet> enemyMag;
 
     turret.SetParent(&player);
     turret2.SetParent(&enemy);
@@ -53,12 +54,13 @@ int main(int argc, char* argv[])
     turret.Sprite = &turretTexture;
 
     player.SetLocalPosition(250, 225);
+    enemy.SetLocalPosition(750, 225);
+    enemy.SetLocalRotation(enemy.GetLocalRotation() + 3.14);
 
-    Rectangle topBorder = { 0.0f, screenWidth, screenWidth, 20.0f};
+    Rectangle topBorder = { 0.0f, -20.0f, screenWidth, 20.0f};
     Rectangle leftBorder = { -20.0f, 0.0f, 20.0f, screenHeight};
-    Rectangle botBorder = { screenWidth, screenHeight, screenWidth, 20.0f};
-    Rectangle rightBorder = { 20.0f, 20.0f, 20.0f, screenHeight};
-    Texture2D borderTexture = LoadTexture("ref/tileGrass1.png");
+    Rectangle botBorder = { 0.0f, screenHeight, screenWidth, 20.0f};
+    Rectangle rightBorder = { screenWidth, 20.0f, 20.0f, screenHeight};
     Rectangle collisionCheckBox = { screenWidth / 7, screenHeight / 5, 50.0f, 50.0f };
 
     //--------------------------------------------------------------------------------------
@@ -85,26 +87,49 @@ int main(int argc, char* argv[])
             newBullet.Sprite = &bulletTexture;
             newBullet.SetLocalPosition(turret.GetWorldPosition());
             newBullet.SetLocalRotation(turret.GetWorldRotation());
-            magazine.push_back(newBullet);
+            playerMag.push_back(newBullet);
+        }
+        if (IsKeyPressed(KEY_KP_0)) {
+            Bullet newBullet;
+            newBullet.Sprite = &bulletTexture;
+            newBullet.SetLocalPosition(turret2.GetWorldPosition());
+            newBullet.SetLocalRotation(turret2.GetWorldRotation());
+            enemyMag.push_back(newBullet);
         }
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
 
         DrawRectangleLinesEx(collisionCheckBox, 5, DARKPURPLE);
-        DrawTextureRec(borderTexture, rightBorder, { 0,0 }, WHITE);
-        DrawTextureRec(borderTexture, botBorder, { 0,0 }, WHITE);
+
+        /*DrawRectangleLinesEx(botBorder, 5, DARKGRAY);
+        DrawRectangleLinesEx(rightBorder, 5, DARKGRAY);
+        DrawRectangleLinesEx(leftBorder, 5, DARKGRAY);
+        DrawRectangleLinesEx(topBorder, 5, DARKGRAY);*/
 
 
-        for (int x = 0; x < magazine.size(); x++) {
-            magazine.at(x).Update(deltaTime);
-            magazine.at(x).Draw();
-            if (magazine.at(x).CheckCollision(collisionCheckBox)) {
-                magazine.erase(magazine.cbegin());
+        for (int x = 0; x < playerMag.size(); x++) {
+            playerMag.at(x).Update(deltaTime);
+            playerMag.at(x).Draw();
+            if (playerMag.at(x).CheckCollision(collisionCheckBox) || playerMag.at(x).CheckCollision(topBorder, botBorder, leftBorder, rightBorder)) {
+                playerMag.erase(playerMag.cbegin());
                 break;
             }
-            if (x == magazine.size()) {
-                magazine.clear();
+            if (x == playerMag.size()) {
+                playerMag.clear();
+                break;
+            }
+        }
+
+        for (int x = 0; x < enemyMag.size(); x++) {
+            enemyMag.at(x).Update(deltaTime);
+            enemyMag.at(x).Draw();
+            if (enemyMag.at(x).CheckCollision(collisionCheckBox) || enemyMag.at(x).CheckCollision(topBorder, botBorder, leftBorder, rightBorder)) {
+                enemyMag.erase(enemyMag.cbegin());
+                break;
+            }
+            if (x == enemyMag.size()) {
+                enemyMag.clear();
                 break;
             }
         }
