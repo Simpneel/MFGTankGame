@@ -2,16 +2,8 @@
 
 void Bullet::OnUpdate(float deltaTime)
 {
-	const float bulletSpeed = 750.0f;
-	float bulletMove = 0.0f;
-	if (IsKeyPressed(KEY_SPACE)) {
-		bulletCount++;
-	}
-	if (bulletCount > 0) {
-		bulletMove += bulletSpeed;
-		this->Translate(GetForward() * (bulletMove * deltaTime));
-		this->Draw();
-	}
+	const float bulletSpeed = 250.0f;
+	this->Translate(GetForward() * (bulletSpeed * deltaTime));
 }
 
 bool Bullet::CheckCollision(Rectangle colRec)
@@ -19,4 +11,14 @@ bool Bullet::CheckCollision(Rectangle colRec)
 	if (CheckCollisionPointRec({ this->GetWorldPosition().x, this->GetWorldPosition().y }, colRec)) {
 		return true;
 	}
+}
+
+bool Bullet::CheckCollision(Rectangle top, Rectangle bot, Rectangle left, Rectangle right)
+{
+	Vector2 tempVec = { this->GetWorldPosition().x, this->GetWorldPosition().y };
+	if (CheckCollisionPointRec(tempVec, top)) return true;
+	else if (CheckCollisionPointRec(tempVec, bot)) return true;
+	else if (CheckCollisionPointRec(tempVec, left)) return true;
+	else if (CheckCollisionPointRec(tempVec, right)) return true;
+	else return false;
 }

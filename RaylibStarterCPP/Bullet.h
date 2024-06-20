@@ -3,8 +3,8 @@
 
 class Bullet : public SpriteObject {
 protected:
-	int bulletCount = 0;
 	void OnUpdate(float deltaTime);
 public:
 	bool CheckCollision(Rectangle colRec);
+	bool CheckCollision(Rectangle top, Rectangle bot, Rectangle left, Rectangle right);
 };

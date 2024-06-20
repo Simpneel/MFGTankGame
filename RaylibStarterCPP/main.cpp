@@ -10,6 +10,7 @@
 #include "Turret.h"
 #include "Bullet.h"
 #include <charconv>
+#include <vector>
 
 #pragma warning(pop)
 
@@ -43,6 +44,7 @@ int main(int argc, char* argv[])
     //SpriteObject Player;
     Tank player;
     Turret turret;
+    std::vector<Bullet> magazine;
 
     turret.SetParent(&player);
     turret2.SetParent(&enemy);
@@ -54,15 +56,11 @@ int main(int argc, char* argv[])
 
     Rectangle topBorder = { 0.0f, screenWidth, screenWidth, 20.0f};
     Rectangle leftBorder = { -20.0f, 0.0f, 20.0f, screenHeight};
-    Rectangle botBorder = { screenHeight, screenWidth, screenWidth, 20.0f};
+    Rectangle botBorder = { screenWidth, screenHeight, screenWidth, 20.0f};
     Rectangle rightBorder = { 20.0f, 20.0f, 20.0f, screenHeight};
-
+    Texture2D borderTexture = LoadTexture("ref/tileGrass1.png");
     Rectangle collisionCheckBox = { screenWidth / 7, screenHeight / 5, 50.0f, 50.0f };
 
-    Bullet bullet;
-    bullet.Sprite = &bulletTexture;
-    bullet.SetLocalPosition(turret.GetWorldPosition());
-    bullet.SetLocalRotation(turret.GetWorldRotation());
     //--------------------------------------------------------------------------------------
 
     // Main game loop
@@ -82,23 +80,39 @@ int main(int argc, char* argv[])
             screenHeight = 450;
             SetWindowSize(screenWidth, screenHeight);
         }
-
-        if (bullet.CheckCollision(rightBorder)) {
-            bullet.SetLocalPosition(turret.GetWorldPosition());
-            bullet.SetLocalRotation(turret.GetWorldRotation());
+        if (IsKeyPressed(KEY_SPACE)) {
+            Bullet newBullet;
+            newBullet.Sprite = &bulletTexture;
+            newBullet.SetLocalPosition(turret.GetWorldPosition());
+            newBullet.SetLocalRotation(turret.GetWorldRotation());
+            magazine.push_back(newBullet);
         }
 
         BeginDrawing();
         ClearBackground(RAYWHITE);
 
         DrawRectangleLinesEx(collisionCheckBox, 5, DARKPURPLE);
+        DrawTextureRec(borderTexture, rightBorder, { 0,0 }, WHITE);
+        DrawTextureRec(borderTexture, botBorder, { 0,0 }, WHITE);
 
+
+        for (int x = 0; x < magazine.size(); x++) {
+            magazine.at(x).Update(deltaTime);
+            magazine.at(x).Draw();
+            if (magazine.at(x).CheckCollision(collisionCheckBox)) {
+                magazine.erase(magazine.cbegin());
+                break;
+            }
+            if (x == magazine.size()) {
+                magazine.clear();
+                break;
+            }
+        }
         
         player.Draw();
         enemy.Draw();
         turret.Draw();
         turret2.Draw();
-        bullet.Update(deltaTime);
       
         EndDrawing();
         
