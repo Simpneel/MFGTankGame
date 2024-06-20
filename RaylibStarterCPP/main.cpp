@@ -1,7 +1,5 @@
 #pragma warning( push , 0)
 #include <raylib.h>
-
-
 #define RAYGUI_IMPLEMENTATION
 #define RAYGUI_SUPPORT_ICONS
 #include <raygui.h>
@@ -10,7 +8,6 @@
 #include "Tank.h"
 #include "Turret.h"
 #include "Bullet.h"
-#include <charconv>
 #include <vector>
 
 #pragma warning(pop)
@@ -22,7 +19,7 @@ int main(int argc, char* argv[])
     int screenHeight = 450;
     
 
-    InitWindow(screenWidth, screenHeight, "Tank Game"); 
+    InitWindow(screenWidth, screenHeight, "Tank Game");
 
     SetTargetFPS(60);
 

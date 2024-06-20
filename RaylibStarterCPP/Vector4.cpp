@@ -23,7 +23,7 @@ std::string MathClasses::Vector4::ToString() const
 
 float MathClasses::Vector4::Magnitude() const
 {
-	float mag = sqrt((x * x) + (y * y) + (z * z) + (w * w));
+	float mag = float(sqrt((x * x) + (y * y) + (z * z) + (w * w)));
 	return mag;
 }
 

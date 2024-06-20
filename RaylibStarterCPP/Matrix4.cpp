@@ -96,25 +96,25 @@ MathClasses::Matrix4 MathClasses::Matrix4::MakeTranslation(Vector3 v) {
 MathClasses::Matrix4 MathClasses::Matrix4::MakeRotateX(float r) {
 	return Matrix4(
 		1.0f, 0.0f, 0.0f, 0.0f,
-		0.0f, cos(r), -sin(r), 0.0f,
-		0.0f, sin(r), cos(r), 0.0f,
+		0.0f, float(cos(r)), float(-sin(r)), 0.0f,
+		0.0f, float(sin(r)), float(cos(r)), 0.0f,
 		0.0f, 0.0f, 0.0f, 1.0f
 	);
 }
 
 MathClasses::Matrix4 MathClasses::Matrix4::MakeRotateY(float r) {
 	return Matrix4(
-		cos(r), 0.0f, sin(r), 0.0f,
+		float(cos(r)), 0.0f, float(sin(r)), 0.0f,
 		0.0f, 1.0f, 0.0f, 0.0f,
-		-sin(r), 0.0f, cos(r), 0.0f,
+		float(-sin(r)), 0.0f, float(cos(r)), 0.0f,
 		0.0f, 0.0f, 0.0f, 1.0f
 	);
 }
 
 MathClasses::Matrix4 MathClasses::Matrix4::MakeRotateZ(float r) {
 	return Matrix4(
-		cos(r), sin(r), 0.0f, 0.0f,
-		-sin(r), cos(r), 0.0f, 0.0f,
+		float(cos(r)), float(sin(r)), 0.0f, 0.0f,
+		float(-sin(r)), float(cos(r)), 0.0f, 0.0f,
 		0.0f, 0.0f, 1.0f, 0.0f,
 		0.0f, 0.0f, 0.0f, 1.0f
 	);

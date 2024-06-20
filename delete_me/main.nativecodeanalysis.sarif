@@ -1,0 +1,2471 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "Return value ignored: 'sscanf'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                },
+                "region": {
+                  "startLine": 2768,
+                  "startColumn": 25,
+                  "endLine": 2768,
+                  "endColumn": 82
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GuiLoadStyle",
+                  "decoratedName": "GuiLoadStyle",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6031",
+          "message": {
+            "text": "Return value ignored: 'sscanf'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                },
+                "region": {
+                  "startLine": 2780,
+                  "startColumn": 25,
+                  "endLine": 2780,
+                  "endColumn": 87
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GuiLoadStyle",
+                  "decoratedName": "GuiLoadStyle",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'font.chars'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                },
+                "region": {
+                  "startLine": 2908,
+                  "startColumn": 21,
+                  "endLine": 2908,
+                  "endColumn": 65
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GuiLoadStyle",
+                  "decoratedName": "GuiLoadStyle",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2744,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2747,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2749,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2751,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2752,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2754,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2813,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2815,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2818,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2820,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2822,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2824,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2825,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2826,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2827,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2829,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2830,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2831,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2832,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2836,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2839,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2840,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2841,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2843,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2843,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2864,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2865,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2867,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2869,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2870,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2871,
+                            "startColumn": 29
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2873,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2874,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2875,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2878,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2881,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2882,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2884,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2901,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2902,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2902,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2902,
+                            "startColumn": 64
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2902,
+                            "startColumn": 55
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2902,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2905,
+                            "startColumn": 28
+                          }
+                        },
+                        "message": {
+                          "text": "'font.chars' may be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2906,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2906,
+                            "startColumn": 35
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'i<font.charsCount')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 2908,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "'font.chars' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6029",
+          "message": {
+            "text": "Possible buffer overrun in call to 'fread'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                },
+                "region": {
+                  "startLine": 3103,
+                  "startColumn": 29,
+                  "endLine": 3103,
+                  "endColumn": 61
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GuiLoadIcons",
+                  "decoratedName": "?GuiLoadIcons@@YAPEAPEADPEBD_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "Dereferencing NULL pointer 'guiIconsName'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                },
+                "region": {
+                  "startLine": 3097,
+                  "startColumn": 21,
+                  "endLine": 3097,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GuiLoadIcons",
+                  "decoratedName": "?GuiLoadIcons@@YAPEAPEADPEBD_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3069,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3071,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3073,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3075,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3076,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3077,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3078,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3079,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3081,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3082,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3083,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3084,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3085,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3089,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3092,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3094,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'guiIconsName' may be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3095,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3095,
+                            "startColumn": 35
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'i<iconsCount')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3097,
+                            "startColumn": 37
+                          }
+                        },
+                        "message": {
+                          "text": "'guiIconsName' is dereferenced, but may still be NULL"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6386",
+          "message": {
+            "text": "Buffer overrun while writing to 'guiIconsName'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                },
+                "region": {
+                  "startLine": 3097,
+                  "startColumn": 21,
+                  "endLine": 3097,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GuiLoadIcons",
+                  "decoratedName": "?GuiLoadIcons@@YAPEAPEADPEBD_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3069,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3071,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3073,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3075,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3076,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3077,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3078,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3079,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3081,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3082,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3083,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3084,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3085,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3089,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3092,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3094,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'guiIconsName' is a 0 byte array"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3095,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3095,
+                            "startColumn": 35
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'i<iconsCount')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3097,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3098,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3095,
+                            "startColumn": 50
+                          }
+                        },
+                        "message": {
+                          "text": "'i' may equal 1"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3095,
+                            "startColumn": 35
+                          }
+                        },
+                        "message": {
+                          "text": "Continue this loop, (assume 'i<iconsCount')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3097,
+                            "startColumn": 37
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid write to 'guiIconsName', (outside its writable range)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6385",
+          "message": {
+            "text": "Reading invalid data from 'guiIconsName'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                },
+                "region": {
+                  "startLine": 3098,
+                  "startColumn": 21,
+                  "endLine": 3098,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GuiLoadIcons",
+                  "decoratedName": "?GuiLoadIcons@@YAPEAPEADPEBD_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3069,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3071,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3073,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3075,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3076,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3077,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3078,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3079,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3081,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3082,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3083,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3084,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3085,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3089,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3092,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3094,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'guiIconsName' is a 0 byte array"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3095,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3095,
+                            "startColumn": 35
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'i<iconsCount')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3097,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3098,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3095,
+                            "startColumn": 50
+                          }
+                        },
+                        "message": {
+                          "text": "'i' may equal 1"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3095,
+                            "startColumn": 35
+                          }
+                        },
+                        "message": {
+                          "text": "Continue this loop, (assume 'i<iconsCount')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3097,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3098,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "'i' is an In/Out argument to 'fread' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\stdio.h:239)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3098,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "Invalid read from 'guiIconsName', (outside its readable range)"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'guiIconsName[i]' could be '0'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                },
+                "region": {
+                  "startLine": 3098,
+                  "startColumn": 21,
+                  "endLine": 3098,
+                  "endColumn": 51
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GuiLoadIcons",
+                  "decoratedName": "?GuiLoadIcons@@YAPEAPEADPEBD_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3069,
+                            "startColumn": 11
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3071,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3073,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3075,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3076,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3077,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3078,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3079,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3081,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3082,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3083,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3084,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3085,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3089,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3092,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3094,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3095,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "'i' is NULL"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3095,
+                            "startColumn": 35
+                          }
+                        },
+                        "message": {
+                          "text": "Enter this loop, (assume 'i<iconsCount')"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3097,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3098,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "'i' is an In/Out argument to 'fread' (declared at c:\\program files (x86)\\windows kits\\10\\include\\10.0.19041.0\\ucrt\\stdio.h:239)"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+                          },
+                          "region": {
+                            "startLine": 3098,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "'guiIconsName[i]' should not be NULL, because this is not consistent with the SAL annotation on 'fread'"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31948.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/s240115/source/repos/RaylibStarterCpp/RaylibStarterCPP/dep/Raygui/src/raygui.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "06c57d36a555e5bcc352159cc3495314bf605e7a3a1cf0cebf2b15d594002297"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "bc732f9c7e15a5066133720b9ed1e1eb5f816d6197ce9739c1a2ecddcff881e7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/dep/raylib/include/raylib.h"
+          },
+          "hashes": {
+            "sha-256": "37356d1c8f0fb945a0bec7206b245c6ad9d803a0536911a6d04da823256ef7d3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/dep/raygui/src/ricons.h"
+          },
+          "hashes": {
+            "sha-256": "2c84fd08fcf5a57c7649cef52f49ae1e40746c84321be21bbf2c0741d040650a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/spriteobject.h"
+          },
+          "hashes": {
+            "sha-256": "12e53fd66c2aee2d01c04cd4c898f3df0a8c074db00e1a9d8d118eec1fcdfc33"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/gameobject.h"
+          },
+          "hashes": {
+            "sha-256": "f4d60f6ebb67ae08b65baf332f6ed4499f6e7f40d2be7dc89d47bf247b5cb761"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/matrix3.h"
+          },
+          "hashes": {
+            "sha-256": "389bac8701b107f1c9aa6b3471085caf4ec2fad07b3b30cb0db8b22a25d740f7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/vector3.h"
+          },
+          "hashes": {
+            "sha-256": "f3ccb32d1ec9c72d9d117a4b815622fe0d23b5369dd59e4d4f77e0cde12ea06c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/tank.h"
+          },
+          "hashes": {
+            "sha-256": "2f05f6cbe17c0652a88ff50488028be8872ea3e83935f2d5f02dc9955f7afbf8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/turret.h"
+          },
+          "hashes": {
+            "sha-256": "b0f75601cd9b610d91d165f8c050d3c07842f82735a7c6ffb94eec652cbb2283"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/bullet.h"
+          },
+          "hashes": {
+            "sha-256": "2b5fb893d71216bf9592c7ac720a98240ec25461d76283cfcf11471f11a5b18f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/dep/enet/include/enet/enet.h"
+          },
+          "hashes": {
+            "sha-256": "1780a6ecc27574a207438639869573f4e417bffc9c95f48a95837a887fad9acf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/dep/enet/include/enet/win32.h"
+          },
+          "hashes": {
+            "sha-256": "4d16a2c8301570fc54264bfe7bfb4b8bdbf86e2a1d8a6e047633e6fd79d4964f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/dep/enet/include/enet/types.h"
+          },
+          "hashes": {
+            "sha-256": "543482db06a0086983641f550effec827e0ccf722667d4e1956cc92cb074dca6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/dep/enet/include/enet/protocol.h"
+          },
+          "hashes": {
+            "sha-256": "32de2a7e94e7dcfdf1b9fae2e4cde44f2e44ef49e9a1c4a9dac2165289da281f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/dep/enet/include/enet/list.h"
+          },
+          "hashes": {
+            "sha-256": "845120efb4ad1633eb2f61c8d8f5529b33de2170152779bc6046ac0453cab46b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/dep/enet/include/enet/callbacks.h"
+          },
+          "hashes": {
+            "sha-256": "20b3d8834bd19b77d9e8b6bcef4cd6fccb9875a4c1cdb0e5f7881b1b285c8d16"
+          }
+        }
+      ]
+    }
+  ]
+}

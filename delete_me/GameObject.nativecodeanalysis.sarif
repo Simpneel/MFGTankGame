@@ -1,0 +1,59 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.34.31948.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/gameobject.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "0c74d2196ade09f30e761b90cca93afb054da7c8569f52461bc6953cc43e426e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/gameobject.h"
+          },
+          "hashes": {
+            "sha-256": "f4d60f6ebb67ae08b65baf332f6ed4499f6e7f40d2be7dc89d47bf247b5cb761"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/matrix3.h"
+          },
+          "hashes": {
+            "sha-256": "389bac8701b107f1c9aa6b3471085caf4ec2fad07b3b30cb0db8b22a25d740f7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/s240115/source/repos/raylibstartercpp/raylibstartercpp/vector3.h"
+          },
+          "hashes": {
+            "sha-256": "f3ccb32d1ec9c72d9d117a4b815622fe0d23b5369dd59e4d4f77e0cde12ea06c"
+          }
+        }
+      ]
+    }
+  ]
+}
