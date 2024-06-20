@@ -18,5 +18,5 @@ void SpriteObject::OnDraw()
 		Rectangle{ 0.0f, 0.0f, (float)Sprite->width, (float)Sprite->height },
 		Rectangle{pos.x, pos.y, (float)Sprite->width * scale.x, (float)Sprite->height * scale.y},
 		Vector2{ Sprite->width * Origin.x * scale.x, Sprite->height * Origin.y * scale.y },
-		rot, RAYWHITE);
+		rot, WHITE);
 }

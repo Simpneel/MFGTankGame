@@ -21,40 +21,39 @@ int main(int argc, char* argv[])
     int screenHeight = 450;
     
 
-    InitWindow(screenWidth, screenHeight, "Tank Game");
+    InitWindow(screenWidth, screenHeight, "Tank Game"); 
 
     SetTargetFPS(60);
 
-    Image turretImage = LoadImage("ref/tankDark_barrel3.png"); ImageRotateCW(&turretImage);
-    Image tankImage = LoadImage("ref/tankBody_huge.png"); ImageRotateCW(&tankImage);
+    Image turretImage = LoadImage("ref/tankDark_barrel3.png"); ImageRotateCW(&turretImage); //Creating images for all required objects and flipping them 90 deg clockwise
+    Image tankImage = LoadImage("ref/tankBody_blue.png"); ImageRotateCW(&tankImage);
     Image bulletImage = LoadImage("ref/bulletRed1.png"); ImageRotateCW(&bulletImage);
 
-    Texture2D tankTexture = LoadTextureFromImage(tankImage);
+    Texture2D tankTexture = LoadTextureFromImage(tankImage);    //Creating textures using pre flipped images
     Texture2D turretTexture = LoadTextureFromImage(turretImage);
     Texture2D bulletTexture = LoadTextureFromImage(bulletImage);
+    
 
-    //Texture2D borderTexture = LoadTexture("ref/tileGrass1.png");
-
-    Tank2 enemy; Turret turret2; Bullet bullet2;
+    Tank2 enemy; Turret turret2; Bullet bullet2;                                           //Creating an enemy object
     Image enemyImage = LoadImage("ref/tankBody_red.png"); ImageRotateCW(&enemyImage);
     Texture enemySprite = LoadTextureFromImage(enemyImage);
     enemy.Sprite = &enemySprite;
     turret2.Sprite = &turretTexture; bullet2.Sprite = &bulletTexture;
 
     //SpriteObject Player;
-    Tank player;
+    Tank player;                                                                          //Creating main player object
     Turret turret;
     std::vector<Bullet> playerMag;
     std::vector<Bullet> enemyMag;
 
-    turret.SetParent(&player);
-    turret2.SetParent(&enemy);
+    turret.SetParent(&player);                                                            //Setting player turret's parent to be the main player object
+    turret2.SetParent(&enemy);                                                            //Setting enemy turret's parent to be the enemy player object
 
     player.Sprite = &tankTexture;
     turret.Sprite = &turretTexture;
 
-    player.SetLocalPosition(250, 225);
-    enemy.SetLocalPosition(750, 225);
+    player.SetLocalPosition(266, 225);                                                          
+    enemy.SetLocalPosition(533, 225);
     enemy.SetLocalRotation(enemy.GetLocalRotation() + 3.14);
 
     Rectangle topBorder = { 0.0f, -20.0f, screenWidth, 20.0f};
@@ -63,10 +62,12 @@ int main(int argc, char* argv[])
     Rectangle rightBorder = { screenWidth, 20.0f, 20.0f, screenHeight};
     Rectangle collisionCheckBox = { screenWidth / 7, screenHeight / 5, 50.0f, 50.0f };
 
-    //--------------------------------------------------------------------------------------
+    Texture2D barrelRust = LoadTexture("ref/barrelRust_side.png");
 
-    // Main game loop
-    while (!WindowShouldClose())    // Detect window close button or ESC key
+    Color mainTint = WHITE;
+    Color dmgTint = RED;
+    
+    while (!WindowShouldClose())    
     {
         float deltaTime = GetFrameTime();
         player.Update(deltaTime); enemy.Update(deltaTime);
@@ -100,7 +101,9 @@ int main(int argc, char* argv[])
         BeginDrawing();
         ClearBackground(RAYWHITE);
 
-        DrawRectangleLinesEx(collisionCheckBox, 5, DARKPURPLE);
+        /*DrawRectangleLinesEx(collisionCheckBox, 5, DARKPURPLE);*/
+        DrawTextureRec(barrelRust, collisionCheckBox, { collisionCheckBox.x,collisionCheckBox.y }, WHITE);
+        
 
         /*DrawRectangleLinesEx(botBorder, 5, DARKGRAY);
         DrawRectangleLinesEx(rightBorder, 5, DARKGRAY);
@@ -128,6 +131,7 @@ int main(int argc, char* argv[])
                 enemyMag.erase(enemyMag.cbegin());
                 break;
             }
+            
             if (x == enemyMag.size()) {
                 enemyMag.clear();
                 break;
