@@ -16,7 +16,7 @@
 //#include "enet_wrapper.h"
 #pragma warning(pop)
 
-int main(int argc, char* argv[])
+int main()
 {
 
     int screenWidth = 800;
@@ -36,38 +36,36 @@ int main(int argc, char* argv[])
     Texture2D bulletTexture = LoadTextureFromImage(bulletImage);
 
 
-    Tank2 enemy; Turret turret2; Bullet bullet2;                                           //Creating an enemy object
+    Tank redPlayer; Turret turret2; Bullet bullet2;                                           //Creating an enemy object
     Image enemyImage = LoadImage("ref/tankBody_red.png"); ImageRotateCW(&enemyImage);
     Texture enemySprite = LoadTextureFromImage(enemyImage);
-    enemy.Sprite = &enemySprite;
+    redPlayer.Sprite = &enemySprite;
     turret2.Sprite = &turretTexture; bullet2.Sprite = &bulletTexture;
 
     //SpriteObject Player;
-    Tank player;                                                                          //Creating main player object
+    Tank bluePlayer;                                                                          //Creating main player object
     Turret turret;
     std::vector<Bullet> playerMag;
     std::vector<Bullet> enemyMag;
 
-    turret.SetParent(&player);                                                            //Setting player turret's parent to be the main player object
-    turret2.SetParent(&enemy);                                                            //Setting enemy turret's parent to be the enemy player object
+    turret.SetParent(&bluePlayer);                                                            //Setting player turret's parent to be the main player object
+    turret2.SetParent(&redPlayer);                                                            //Setting enemy turret's parent to be the enemy player object
 
-    player.Sprite = &tankTexture;
+    bluePlayer.Sprite = &tankTexture;
     turret.Sprite = &turretTexture;
 
-    player.SetLocalPosition(266, 225);
-    enemy.SetLocalPosition(533, 225);
-    enemy.SetLocalRotation(enemy.GetLocalRotation() + 3.14);
+    bluePlayer.SetLocalPosition(266, 225);
+    redPlayer.SetLocalPosition(533, 225);
+    redPlayer.SetLocalRotation(redPlayer.GetLocalRotation() + 3.14);
 
-    Rectangle topBorder = { 0.0f, -20.0f, screenWidth, 20.0f };
-    Rectangle leftBorder = { -20.0f, 0.0f, 20.0f, screenHeight };
-    Rectangle botBorder = { 0.0f, screenHeight, screenWidth, 20.0f };
-    Rectangle rightBorder = { screenWidth, 20.0f, 20.0f, screenHeight };
+    Rectangle topBorder = { 0.0f, -20.0f, (float)screenWidth, 20.0f };
+    Rectangle leftBorder = { -20.0f, 0.0f, 20.0f, (float)screenHeight };
+    Rectangle botBorder = { 0.0f, (float)screenHeight, (float)screenWidth, 20.0f };
+    Rectangle rightBorder = { (float)screenWidth, 20.0f, 20.0f, (float)screenHeight };
     Rectangle collisionCheckBox = { screenWidth / 7, screenHeight / 5, 50.0f, 50.0f };
 
     Texture2D barrelRust = LoadTexture("ref/barrelRust_side.png");
 
-    Color mainTint = WHITE;
-    Color dmgTint = RED;
     int letterCount = 0;
     char choice[4]{};
 
@@ -101,11 +99,11 @@ int main(int argc, char* argv[])
         while (!WindowShouldClose())
         {
             player1.ReceivePacket(&serverState);
-
+            redPlayer.SetLocalPosition(serverState.clientPosition);
             float deltaTime = GetFrameTime();
-            player.Update(deltaTime); 
+            bluePlayer.Update(deltaTime); 
             turret.Update(deltaTime); 
-            enemy.Update(deltaTime);
+            redPlayer.Update(deltaTime);
             turret2.Update(deltaTime);
 
             if (IsKeyPressed(KEY_SPACE)) {
@@ -115,18 +113,17 @@ int main(int argc, char* argv[])
                 newBullet.SetLocalRotation(turret.GetWorldRotation());
                 playerMag.push_back(newBullet);
             }
-            else if (IsKeyPressed(KEY_W)) player.Direction = KEY_W;
-            else if (IsKeyPressed(KEY_A)) player.Direction = KEY_A;
-            else if (IsKeyPressed(KEY_S)) player.Direction = KEY_S;
-            else if (IsKeyPressed(KEY_D)) player.Direction = KEY_D;
-            /*if (IsKeyPressed(KEY_KP_0)) {
-                Bullet newBullet;
-                newBullet.Sprite = &bulletTexture;
-                newBullet.SetLocalPosition(turret2.GetWorldPosition());
-                newBullet.SetLocalRotation(turret2.GetWorldRotation());
-                enemyMag.push_back(newBullet);
-            }*/
+            else if (IsKeyPressed(KEY_W)) bluePlayer.Direction = KEY_W;
+            else if (IsKeyPressed(KEY_A)) bluePlayer.Direction = KEY_A;
+            else if (IsKeyPressed(KEY_S)) bluePlayer.Direction = KEY_S;
+            else if (IsKeyPressed(KEY_D)) bluePlayer.Direction = KEY_D;
+            
+
+            serverState.serverPosition = bluePlayer.GetWorldPosition();
+            serverState.clientPosition = redPlayer.GetWorldPosition();
             player1.SendPacket(serverState);
+
+
             BeginDrawing();
             ClearBackground(RAYWHITE);
             DrawTextureRec(barrelRust, collisionCheckBox, { collisionCheckBox.x,collisionCheckBox.y }, WHITE);
@@ -158,8 +155,8 @@ int main(int argc, char* argv[])
                 }
             }
 
-            player.Draw();
-            enemy.Draw();
+            bluePlayer.Draw();
+            redPlayer.Draw();
             turret.Draw();
             turret2.Draw();
 
@@ -179,9 +176,9 @@ int main(int argc, char* argv[])
             player2.ReceivePacket(&clientState);
 
             float deltaTime = GetFrameTime();
-            player.Update(deltaTime);
+            bluePlayer.Update(deltaTime);
             turret.Update(deltaTime);
-            enemy.Update(deltaTime);
+            redPlayer.Update(deltaTime);
             turret2.Update(deltaTime);
 
             if (IsKeyPressed(KEY_SPACE)) {
@@ -191,10 +188,10 @@ int main(int argc, char* argv[])
                 newBullet.SetLocalRotation(turret.GetWorldRotation());
                 playerMag.push_back(newBullet);
             }
-            else if (IsKeyPressed(KEY_W)) player.Direction = KEY_W;
-            else if (IsKeyPressed(KEY_A)) player.Direction = KEY_A;
-            else if (IsKeyPressed(KEY_S)) player.Direction = KEY_S;
-            else if (IsKeyPressed(KEY_D)) player.Direction = KEY_D;
+            else if (IsKeyPressed(KEY_W)) bluePlayer.Direction = KEY_W;
+            else if (IsKeyPressed(KEY_A)) bluePlayer.Direction = KEY_A;
+            else if (IsKeyPressed(KEY_S)) bluePlayer.Direction = KEY_S;
+            else if (IsKeyPressed(KEY_D)) bluePlayer.Direction = KEY_D;
             
             player2.SendPacket(clientState);
             BeginDrawing();
@@ -228,8 +225,8 @@ int main(int argc, char* argv[])
                 }
             }
 
-            player.Draw();
-            enemy.Draw();
+            bluePlayer.Draw();
+            redPlayer.Draw();
             turret.Draw();
             turret2.Draw();
 

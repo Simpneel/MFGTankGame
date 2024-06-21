@@ -3,7 +3,7 @@
 ENet_Client::ENet_Client() {
 	newObject->Initialize();
 	if (newObject->CreateClient()) std::cout << "Client creation successful!\n";
-	if (newObject->Connect("192.168.56.1", 2331)) std::cout << "Connection to default gateway successful!\n";
+	if (newObject->Connect("192.168.56.1", (uint16_t*)2331)) std::cout << "Connection to default gateway successful!\n";
 }
 
 ENet_Client::~ENet_Client() {

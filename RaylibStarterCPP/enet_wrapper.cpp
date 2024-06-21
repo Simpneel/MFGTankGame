@@ -94,10 +94,10 @@ bool ENetWrapper::CreateClient() {
     return true;
 }
 
-bool ENetWrapper::Connect(const char* address, enet_uint16* port) {
+bool ENetWrapper::Connect(const char* address, uint16_t* port) {
     ENetAddress enet_address;
     enet_address_set_host(&enet_address, address);
-    enet_address.port = *port;
+    enet_address.port = (enet_uint16)*port;
 
     peer = enet_host_connect(host, &enet_address, 2, 0);
     if (peer == nullptr) {

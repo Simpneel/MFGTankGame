@@ -5,8 +5,10 @@
 using Vec3 = MathClasses::Vector3;
 
 struct GameState {
-    Vec3 playerPos;
-    Vec3 enemyPos;
+    Vec3 serverPosition;
+    float serverRotation;
+    Vec3 clientPosition;
+    float clientRotation;
     int playerHP = 5;
     int enemyHP = 5;
 };
@@ -24,7 +26,7 @@ public:
     bool CreateServer();
     bool CreateClient();
 
-    bool Connect(const char* address, enet_uint16* port);
+    bool Connect(const char* address, uint16_t* port);
     void Disconnect();
 
     void SendPacket(const void* data, size_t size);

@@ -7,8 +7,3 @@ protected:
 public:
 	int Direction;
 };
-
-class Tank2 : public Tank {
-protected:
-	void OnUpdate(float deltaTime) override;
-};
