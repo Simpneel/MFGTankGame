@@ -177,6 +177,7 @@
     <ClCompile Include="Colour.cpp" />
     <ClCompile Include="enet_client.cpp" />
     <ClCompile Include="enet_server.cpp" />
+    <ClCompile Include="enet_wrapper.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Matrix3.cpp" />
@@ -190,6 +191,9 @@
   <ItemGroup>
     <ClInclude Include="Bullet.h" />
     <ClInclude Include="Colour.h" />
+    <ClInclude Include="enet_client.h" />
+    <ClInclude Include="enet_server.h" />
+    <ClInclude Include="enet_wrapper.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Matrix3.h" />
     <ClInclude Include="Matrix4.h" />

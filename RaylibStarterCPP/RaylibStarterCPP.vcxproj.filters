@@ -54,6 +54,9 @@
     <ClCompile Include="enet_client.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="enet_wrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Colour.h">
@@ -84,6 +87,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Bullet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enet_wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enet_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enet_server.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

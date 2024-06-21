@@ -5,7 +5,7 @@ class Tank : public SpriteObject {
 protected:
 	void OnUpdate(float deltaTime) override;
 public:
-	Vec3 GetLocation();
+	int Direction;
 };
 
 class Tank2 : public Tank {
